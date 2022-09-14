@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="400" prefWidth="600"
+      fx:controller="ifpr.pgua.eic.estacionamento.controllers.JanelaCadastro"
+      spacing="5.0"
+      >
+
+    <padding>
+        <Insets topRightBottomLeft="10.0"/>
+    </padding>
+
+    <Label text="Placa"/>
+    <TextField fx:id="tfPlaca"/>
+
+    <Label text="Modelo"/>
+    <TextField fx:id="tfModelo"/>
+
+    <Label text="Fabricante"/>
+    <ComboBox fx:id="cbFabricante"/>
+
+    <Label text="Cor"/>
+    <TextField fx:id="tfCor"/>
+    
+    <HBox spacing="5.0">
+        <Button text="Cadastrar" onAction="#cadastrar"/>
+        <Button text="Limpar" onAction="#limpar"/>
+        <Button text="Voltar" onAction="#voltar"/>
+    </HBox>
+    
+
+</VBox>
